@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        /* CSS for gallery grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+        .image_link{
+          width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Image Gallery</h1>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our technology section!</p>
+        <a href="https://www.techradar.com/">
+            <img class="image_link" src="thumbnails/image2.jpg" alt="Technology Image">
+        </a>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <a href="https://www.nationalgeographic.com/">
+                <img class="image_link" src="thumbnails/blake-verdoorn-cssvEZacHvQ-unsplash.jpg" alt="Nature Image 1">
+            </a>
+            <a href="https://www.bbcearth.com/">
+                <img class="image_link" src="thumbnails/neom-i60yUhfWeYI-unsplash.jpg" alt="Nature Image 2">
+            </a>
+            <a href="https://www.nature.org/">
+                <img class="image_link" src="thumbnails/robert-lukeman-_RBcxo9AU-U-unsplash.jpg" alt="Nature Image 3">
+            </a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="https://whataburger.com/"><img class="image_link" src="thumbnails/istockphoto-1498243668-170667a.webp" alt="Burger"> Burger</a></li>
+            <li><a href="https://www.blazepizza.com/"><img class="image_link" src="thumbnails/istockphoto-1455050837-170667a.webp" alt="Pizza"> Pizza</a></li>
+            <li><a href="https://www.allrecipes.com/recipes/96/salad/"><img class="image_link" src="thumbnails/istockphoto-1468860049-170667a.webp" alt="Salad"> Salad</a></li>
+        </ul>
+    </section>
+</body>
+</html>
