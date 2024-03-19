@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/fa930cfc62.js" crossorigin="anonymous"></script>
+</head>
+<body class="container">
+    <!-- Start of Header Section-->
+    <div id="header">
+        <div class="header-container">
+            <nav>
+                <!-- Logo -->
+                <img src="DERRY/IMAGES/my-logo.jpg" class="logo">
+                <!-- Navigation Menu-->
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#project">PROJECTS</a></li>
+                    <li><a href="#contact-info">CONTACT INFORMATION</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- Header Text Section -->
+            <div class="header-title scroll-scale">
+                <h2>Software<br> Engineering <br> Student</h2>
+                <h1>Hello there, I'm<br><span>DERICK</span> OGUTU</h1>
+                <p>I am Based in Kenya.</p>
+                <!-- Social Media Links -->
+                <div class="social-icons">
+                    <a href="https://twitter.com/deckoruzze" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>                        
+                    <a href="https://www.linkedin.com/in/derick-ogutu-636065202/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>                        
+                    <a href="https://github.com/mypin99" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Header Section-->
+
+    <!-- Start of About Me Section-->
+    <div id="about">
+        <!-- Start of About Me container block-->
+        <div class="about-container">
+            <h1 class="about-title">ABOUT ME</h1>
+            <!-- Start of About Me Row Content(Image and Text)-->
+            <div class="about-row">
+                <!-- Start of About Me Image Column-->
+                <div class="about-image scroll-scale">
+                    <img src="DERRY/IMAGES/about-me.jpg">
+                </div>
+                <!-- End of About Me Image Column-->
+                <!-- Start of About Me Text Column-->
+                <div class="about-text scroll-scale">
+                    <h1 class="title">So, Who am I?</h1>
+                    <p>I am a very dedicated and passionate individual and, having a strong foundation in Introduction to Software Engineering from ALX AFRICA Program, I am proficient in several programming languages, including Python, and JavaScript. Also, I have experience in developing web and mobile applications, as well as a deep understanding of data structures and algorithms. Throughout my academic journey, I have collaborated on various projects, mastering version control systems like Git and employing agile methodologies to ensure efficient project management. My commitment to writing clean and efficient code, along with my problem-solving skills and attention to detail, equips me to tackle complex challenges in the field of software development. I am excited to continue growing as a software engineer and contributing my skills to innovative projects that make a positive impact.</p>
+                    <!-- Education and Experience tab titles-->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education </p>
+                    </div>
+                    <!-- End of Education and Experience tab titles-->
+                    <!--Start of Experience tab-->
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>May, 2023 -August,2023</span><br> worked on internship as a control engineer with Kenya Power and Lighting Company, Kenya</li>
+                            <li><span>January,2021 - April,2021</span><br> IT specialist with the local company in Nairobi, Kenya</li>
+                        </ul>
+                    </div>
+                    <!-- End of Experience tab-->
+                    <!-- Start of Education tab-->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>July,2023 - October,2023</span><br>Introduction to Software Engineering at ALX AFRICA</li>
+                            <li><span>2019 - 2023</span><br>BSC. Instrumentation and Control Engineering, EGERTON UNIVERSITY Kenya</li>
+                            <li><span>2007 - 2014</span><br>Primary Education at Makunda Primary School</li>
+                            <li><span>2015-2018</span><br>Secondary Education at Kisumu Boys High School, Kenya</li>
+                        </ul>
+                    </div>
+                    <!-- End of Education tab-->
+                </div>
+                <!-- End of About Me Text Column-->
+            </div>
+            <!-- End of About Me Row Content(Image and Text) -->
+        </div>
+        <!-- End of About Me container block-->
+    </div>
+    <!-- End of About Me Section-->
+
+    <!-- Start of Skills Section-->
+    <div id="skills">
+        <!-- Start of Skills container block-->
+        <div class="skills-container">
+            <div>
+                <h1 class="skill-title">SKILLS</h1>
+            </div>
+            <!-- Start of Skills div-->
+            <div class="skill-column">
+                <div class="left-column scroll-scale">
+                     <!-- Skill 1-->
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>FIGMA</p>
+                        <p>75%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="figma"></span>
+                    </div>
+                </div>
+                <!-- End of Skill 1-->
+
+                <!-- Skill 2-->
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <p>68%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+                <!-- End of Skill 2-->
+
+                <!-- Skill 3-->
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>PYTHON</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="python"></span>
+                    </div>
+                </div>
+                <!-- End of Skill 3-->
+
+                <!-- Skill 4-->
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>JAVASCRIPT</p>
+                        <p>60%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="javascript"></span>
+                    </div>
+                </div>
+                <!-- End of Skill 4-->
+                </div>
+                <!-- End of Left Column skills -->
+                <div class="right-column scroll-scale">
+                     <!-- Skill 5-->
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>PHP</p>
+                        <p>55%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="php"></span>
+                    </div>
+                </div>
+                <!-- End of Skill 5-->
+
+                <!-- Skill 6-->
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>GIT</p>
+                        <p>78%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="git"></span>
+                    </div>
+                </div>
+                <!-- End of Skill 6-->
+
+                <!-- Skill 7-->
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>C</p>
+                        <p>50%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="c"></span>
+                    </div>
+                </div>
+                <!-- End of Skill 7-->
+
+                <!-- Skill 8-->
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>SQL</p>
+                        <p>73%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="sql"></span>
+                    </div>
+                </div>
+                <!-- End of Skill 8-->
+                </div>
+                <!-- End of Right column skills-->
+            </div>
+            <!-- End of Skill Column -->
+        </div>
+        <!-- End of Skills container block-->
+    </div>
+    <!-- End of Skils Section -->
+
+    <!--Start of Projects Section -->
+    <div id="project">
+        <div class="project-container">
+            <h1 class="project-title scroll-scale">PROJECTS</h1>
+            <h1 class="title scroll-scale">Some of My Work</h1>
+            <!-- Start of Projects Contents-->
+            <div class="work-list scroll-scale">
+                <!-- Project 1 -->
+                <div class="work">
+                    <img src="DERRY/IMAGES/image1.png">
+                    <div class="layer">
+                        <h3>Palindrome Game</h3>
+                        <p>A palindrome game project is an interactive program where users can input text or numbers, to be calculated, and the system checks for palindrome sequences.</p>
+                    </div>    
+                </div>
+                <!-- Project 2 -->
+                <div class="work">
+                    <img src="DERRY/IMAGES/image2.jpg">
+                    <div class="layer">
+                        <h3>Patient Face Recognition System</h3>
+                        <p>The system is a technological solution designed for the healthcare industry, which utilizes facial recognition technology to identify and authenticate patients within a medical facility. This system captures and analyzes a patient's facial features to accurately match them with their medical records, ensuring secure and efficient access to their health information and medical care. It enhances patient verification, reduces administrative errors, and bolsters security within healthcare settings, ultimately improving the overall quality of patient care and medical record management.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="work">
+                    <img src="DERRY/IMAGES/image3.jpg">
+                    <div class="layer">
+                        <h3>Website Project</h3>
+                        <p>The website project was implemented from scratch.</p>
+                        <a href="https://github.com/mypin99/headphones" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Projects Contents-->
+            <!-- More Project Button -->
+            <a href="https://github.com/mypin99" class="button">Check Out More Projects</a>
+        </div>
+    </div>
+    <!-- End of Projects Section -->
+
+    <!-- Start of Contant Information -->
+    <div id="contact-info">
+        <div class="contact-container">
+            <h1 class="contact-title">CONTACT INFORMATION</h1>
+            <!-- Contact Information Contents-->
+            <div class="row">
+                <!-- Get In Touch -->
+                <div class="get-in-touch scroll-bottom">
+                    <h2 class="sub-title">Get In Touch</h2>
+                    <form id="contact-form" action="https://formsubmit.co/ogutuderick4@gmail.com" method="POST" onsubmit="resetForm()" >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button button2">Submit</button>
+                    </form>
+                </div>
+                <!-- End of Get In Touch-->
+                <!-- Contact Me -->                
+                <div class="contact-me scroll-scale">
+                    <h1 class="title">Contact Me</h1>
+                    <p>Feel free to reach out, I am here to collaborate and create together.<br><span>Just a ping away!</span></p>
+                    <p><i class="fa-solid fa-envelope"></i>ogutuderick4@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>+254757456981</p>
+                    <!-- Social Media Links -->
+                    <div class="social-icons">
+                        <a href="https://twitter.com/deckoruzze" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>                        
+                        <a href="https://www.linkedin.com/in/derick-ogutu-636065202/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>                        
+                        <a href="https://github.com/mypin99" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <!-- CV Download-->
+                    <img src="DERRY/IMAGES/CV.pdf">
+                     </div>
+                <!-- End of Contact Me-->
+            </div>
+            <!-- End of Contact Information Contents-->
+        </div>
+    </div>
+    <!-- End of Contact Information -->
+
+    <!-- Start of Footer Section -->
+    <footer>
+        <div id="footer">
+            <p class="copyright">Copyright © 2023 DERICK. All Rights Reserved.</p>
+            <a href="#header"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+        </div>
+    </footer>
+    <!-- End of Footer Section -->
+
+
+    <script>
+        // Get all elements with the class "tab-links" and store them in the "tablinks" array-like object.
+        let tablinks = document.getElementsByClassName("tab-links");
+        // Get all elements with the class "tab-contents" and store them in the "tabcontents" array-like object.
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        // Opentab function which takes a parameter "tabname", used for switching between content section based on the tab clicked.
+        function opentab(tabname) {
+            // Loop through all elements with the class "tab-links".
+            for (tablink of tablinks){
+                // Remove the "active-link" class from each "tab-link" element.
+                tablink.classList.remove("active-link");
+            }
+
+            // Loop through all elements with the class "tab-contents".
+            for (tabcontent of tabcontents){
+                 // Remove the "active-tab" class from each "tab-content" element.
+                tabcontent.classList.remove("active-tab");
+            }
+
+            // Add the "active-link" class to the clicked "tab-link" element.
+            event.currentTarget.classList.add("active-link")
+            // Add the "active-tab" class to the element with the specified "tabname" ID.
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        let sidemenu = document.getElementById("sidemenu");
+
+        // Function to open the side menu.
+        function openmenu() {
+            sidemenu.style.right = "0"; // Set the right CSS property of the "sidemenu" element to "0," making it visible.
+        }
+
+         // Function to close the side menu.
+        function closemenu() {
+            sidemenu.style.right = "-200px"; // Set the right CSS property of the "sidemenu" element to "-200px," hiding it.
+        }
+    </script>
+
+    <script>
+        // Create an IntersectionObserver object, which is used to check if an element is in the viewport.
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                // Check if the element is currently intersecting with the viewport.
+                if(entry.isIntersecting) {
+                    // If it's intersecting, add the "show-items" class to the element, which makes it visible.
+                    entry.target.classList.add("show-items");
+                }
+                else {
+                    // If it's not intersecting, remove the "show-items" class to hide it.
+                    entry.target.classList.remove("show-items");
+                }
+            });
+        });
+
+        // Select all elements with the class "scroll-scale" and observe them using the IntersectionObserver.
+        const scrollScale = document.querySelectorAll(".scroll-scale");
+        scrollScale.forEach((el) => observer.observe(el));
+
+        // Select all elements with the class "scroll-bottom" and observe them using the IntersectionObserver.
+        const scrollBottom = document.querySelectorAll(".scroll-bottom");
+        scrollBottom.forEach((el) => observer.observe(el));
+
+        // Select all elements with the class "scroll-top" and observe them using the IntersectionObserver.
+        const scrollTop = document.querySelectorAll(".scroll-top");
+        scrollTop.forEach((el) => observer.observe(el));
+    </script>
+    
+    <script>
+        function resetForm() {
+            // Get the form element by its ID
+            const form = document.getElementById("contact-form");
+
+            // Reset the form to clear input fields
+            form.reset();
+
+           // Prevent the form from being submitted to the server
+            return false;
+        }
+    </script>
+</body>
+</html>
